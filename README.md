@@ -1,21 +1,34 @@
-[//]: # (Update this file with actual SystemName and ActionName)
-# Frends.{SystemName}
+# Frends.Test.TestWorkflow
 
-Frends tasks for {SystemName} related operations.
+Testing
 
-# Tasks
+[![TestWorkflow_build](https://github.com/FrendsPlatform/Frends.Test/actions/workflows/TestWorkflow_test_on_main.yml/badge.svg)](https://github.com/FrendsPlatform/Frends.Test/actions/workflows/TestWorkflow_test_on_main.yml)
+![Coverage](https://app-github-custom-badges.azurewebsites.net/Badge?key=FrendsPlatform/Frends.Test/Frends.Test.TestWorkflow|main)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-- [Frends.{SystemName}.{ActionName}](Frends.{SystemName}.{ActionName}/README.md)
+## Installing
 
-# Contributing
+You can install the Task via Frends UI Task View.
 
-When contributing to this repository, please first discuss the change you wish to make via issue, email, or any other
-method with the owners of this repository before making a change.
+## Building
 
-1. Fork the repository on GitHub
-2. Clone the project to your own machine
-3. Commit changes to your own branch
-4. Push your work back up to your fork
-5. Submit a Pull request so that we can review your changes
+### Clone a copy of the repository
 
-NOTE: Be sure to merge the latest from "upstream" before making a pull request!
+`git clone https://github.com/FrendsPlatform/Frends.Test.git`
+
+### Build the project
+
+`dotnet build`
+
+### Run tests
+
+Run the tests
+
+`dotnet test`
+
+### Create a NuGet package
+
+`dotnet pack --configuration Release`
+
+### StyleCop.Analyzers Version
+This project uses StyleCop.Analyzers 1.2.0-beta.556, as recommended by the author, to get the latest fixes and improvements not available in the last stable release.
